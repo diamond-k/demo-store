@@ -53,6 +53,7 @@ const MODAL_WIDTH = 550
         this.$modal.hide('sign-in')
 
         alert('Hey ' + data.userName +'!')
+        this.$route.go(-1);
       },
     },
       created () {

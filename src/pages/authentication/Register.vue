@@ -54,7 +54,7 @@ const MODAL_WIDTH = 550
 
         alert('Hey ' + data.userName +'!')
        // this.$router.push({name: 'Home'});
-    
+        this.$route.go(-1);
         },
       },
   created () {
