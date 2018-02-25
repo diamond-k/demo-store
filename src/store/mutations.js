@@ -165,5 +165,6 @@ export const orderMutations = {
     [ADD_ORDER_SUCCESS](state, data) {
         state.showLoader = false
         state.cartCount = 0
+        state.cart = []
     }
 }

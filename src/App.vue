@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <!-- style="background: rgba(0, 0, 0, 0.75);" -->
-     <register/>
-     <sign-in />
+     <!-- <register/> -->
+     <!-- <sign-in /> -->
    <!-- navbar-fixed-top -->
     <nav class="navbar ">
        <div class="container">
@@ -28,13 +28,13 @@
             <!-- <span> Hello. -->
               <!-- style="color: #EFDB06;" -->
               <!-- @click="$modal.show('sign-in')" -->
-             <router-link to="/signIn" class="sign-in" style="padding-right:10px;color:#ccac00"> Log In</router-link>
+             <router-link to="/signIn" class="sign-in" style="padding-right:10px;"> Log In</router-link>
              <!-- @click="$modal.show('register')" -->
-             <router-link to="/register"  class="register" style="color:#ccac00"> Register</router-link>
+             <router-link to="/register"  class="register"> Register</router-link>
             <!-- </span> -->
           </li> 
-           <li><router-link to="/admin"><span style="font-size:16px;color:color:#3d3d3d;" class="fa fa-user"></span> Admin</router-link></li>
-          <li><router-link  to="/cart"><span style="font-size:16px;color:#3d3d3d;" class="fa fa-shopping-cart"></span>Shopping basket ({{cartItemsCount}})</router-link></li>
+           <li><router-link id="adminLink"  to="/admin"><span style="font-size:16px;" class="fa fa-user"></span> Admin</router-link></li>
+          <li><router-link id="cartLink" to="/cart"><span style="font-size:16px;" class="fa fa-shopping-cart"></span>Shopping basket ({{cartItemsCount}})</router-link></li>
           </ul>
       <!-- </div>   -->
     </div>

@@ -1,8 +1,8 @@
 <template>
-<transition name="pop-out">
- <modal name="sign-in"   :width="modalWidth" :height="400" >
+<!-- <transition name="pop-out"> -->
+ <!-- <modal name="sign-in"   :width="modalWidth" :height="400" > -->
   <div class="row">
-    <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+    <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
      <form id="sign-in-form" role="form" autocomplete="false">
         <h3 class="text-center">Log in</h3>
           <input type="text" name="userName" id="userName" class="form-control" placeholder="User Name" value=""
@@ -11,12 +11,19 @@
           v-model="email">
           <input type="password" name="password" id="password" class="form-control" placeholder="Password"
           v-model="password">
-          <button class="button" style="width: 100%;margin-top: 10px; color:#fff;font-size: 14px;" @click.prevent="signIn"><i class="fa fa-sign-in"></i> Log in</button>
+          <button class="button" style="width: 100%;margin-top: 10px; color:#fff;font-size: 14px;"
+           @click.prevent="signIn"><i class="fa fa-sign-in"></i> Log in</button>
+           <div>
+             <div class="center" style= "margin-top:10px;">
+              <p class="inline">Not registered yet? </p>
+              <router-link class="inline" to="/register">Register</router-link>
+             </div>
+         </div>
       </form>
     </div>
   </div>
-  </modal>
-</transition>
+  <!-- </modal> -->
+<!-- </transition> -->
 </template>
 
 <script>
@@ -57,6 +64,22 @@ const MODAL_WIDTH = 550
 </script>
 
 <style scoped>
+
+.page-number {
+    display: inline-block;
+    float: none;
+    width: 28px;
+    height: auto;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.47);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.34);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.47);
+}
+
 h3{
     box-sizing: border-box;
     padding: 30px;

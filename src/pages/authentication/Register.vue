@@ -1,8 +1,8 @@
 <template> 
-<transition name="pop-out">
- <modal name="register"  :width="modalWidth" :height="400">
+<!-- <transition name="pop-out"> -->
+ <!-- <modal name="register"  :width="modalWidth" :height="400"> -->
   <div class="row">
-    <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+    <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
      <form id="register-form" role="form" autocomplete="false">
         <h3 class="text-center">Register</h3>
           <input type="text" name="userName" id="userName" class="form-control" placeholder="User Name" value=""
@@ -13,12 +13,18 @@
           v-model="password">
 
           <button class="button" style="width: 100%;margin-top: 10px; color:#fff;font-size: 14px;" @click.prevent="register"><i class="fa fa-user-plus"></i> Create Account</button>
-          <!-- <div><p class="change-form">Already have an account? <a @click="$modal.show('sign-in')">Log in</a></p></div> -->
+         
+          <div>
+            <div class="center" style="margin-top:10px">
+              <p class="inline">Already have an account?</p>
+              <router-link class="inline" to="/signIn"> Log in</router-link>
+            </div>  
+          </div>
       </form>
     </div>
   </div>
-</modal>
-</transition>
+<!-- </modal> -->
+<!-- </transition> -->
 </template>
 
 <script>
