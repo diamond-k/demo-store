@@ -54,7 +54,7 @@ const MODAL_WIDTH = 550
 
         alert('Hey ' + data.userName +'!')
           console.log("Go back a Page");
-        this.$route.go(-1);
+        this.$router.go(-1);
       
       },
     },
