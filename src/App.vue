@@ -79,7 +79,7 @@ export default {
    created () {
     // Subscriptions for mutation  
     toastr.options = {
-      "closeButton": false,
+      "closeButton": true,
       "debug": false,
       "newestOnTop": true,
       "progressBar": false,
