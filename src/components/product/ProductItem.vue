@@ -7,6 +7,7 @@
            <img class="img-responsive" :src="product.image" alt="">
           </div>
         </div>
+     </router-link>
         <div class="product-description">
           <div class="product-info">
             <small>{{product.manufacturer.name}}</small>
@@ -16,7 +17,6 @@
             </div>
           </div>
          </div>
-      </router-link>
       <div class="product-action">
         <product-button :product="product" :isAdding= "true"></product-button>
       </div>
