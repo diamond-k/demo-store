@@ -30,7 +30,7 @@
           name="AddressOne"
            v-model="model.AddressOne"
           :class="{'form-control': true, 'error': errors.has('AddressOne') }" />
-        <span class="small text-danger"><p v-show="errors.has('firstName')">Please enter an address</p>
+        <span class="small text-danger"><p v-show="errors.has('AddressOne')">Please enter an address</p>
         </span>
       </div>
       <div class="form-group">
