@@ -21,34 +21,6 @@
         </div>
       </div>
        <div class="form-group">
-        <label class="required">Address line 1
-        </label>
-        <input
-          type="text"
-          v-validate="'required'"
-           placeholder="Street address"
-          name="AddressOne"
-           v-model="model.AddressOne"
-          :class="{'form-control': true, 'error': errors.has('AddressOne') }" />
-        <span class="small text-danger"><p v-show="errors.has('AddressOne')">Please enter an address</p>
-        </span>
-      </div>
-      <div class="form-group">
-        <label class="required">Town or City</label>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Town/city"
-          v-validate="'required'"
-           maxlength="150" 
-          name="TownOrCity"
-           v-model="model.TownOrCity"
-          :class="{'form-control': true, 'error': errors.has('TownOrCity') }" />
-        <span class="small text-danger"><p v-show="errors.has('TownOrCity')">Please enter a town or city</p></span>
-      </div>
-         </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      <div class="form-group">
         <label class="required">Last name</label>
         <input
           type="text"
@@ -62,6 +34,22 @@
         <span class="small text-danger"><p v-show="errors.has('lastName')">Please enter a last name</p></span>
       </div>
        <div class="form-group">
+        <label class="required">Address line 1
+        </label>
+        <input
+          type="text"
+          v-validate="'required'"
+           placeholder="Street address"
+          name="AddressOne"
+           v-model="model.AddressOne"
+          :class="{'form-control': true, 'error': errors.has('AddressOne') }" />
+        <span class="small text-danger"><p v-show="errors.has('AddressOne')">Please enter an address</p>
+        </span>
+      </div>
+     
+    </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="form-group">
         <label>Address line 2
         </label>
         <input
@@ -70,6 +58,19 @@
             placeholder="Flat No. / House name"
           name="AddressTwo"
           :class="{'form-control': true }" />
+      </div>
+      <div class="form-group">
+        <label class="required">Town or City</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Town/city"
+          v-validate="'required'"
+           maxlength="150" 
+          name="TownOrCity"
+           v-model="model.TownOrCity"
+          :class="{'form-control': true, 'error': errors.has('TownOrCity') }" />
+        <span class="small text-danger"><p v-show="errors.has('TownOrCity')">Please enter a town or city</p></span>
       </div>
       <div class="form-group">
         <label class="required">Postcode</label>
