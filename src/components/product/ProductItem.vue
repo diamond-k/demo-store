@@ -17,7 +17,7 @@
           </div>
          </div>
       </router-link>
-      <div class="product-action">
+      <div class="product-action hidden-xs">
         <product-button :product="product" :isAdding= "true"></product-button>
       </div>
     </div>
@@ -61,7 +61,7 @@
     transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
   } 
 
-  .product:hover .product-description {
+  .hidden-xs .product:hover .product-description {
     transform: translateY(-20px); 
   }
 

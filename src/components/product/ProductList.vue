@@ -1,7 +1,16 @@
 <template>                
   <div>
     <div class="products">
-      <div class="container">
+      <div class="container hidden-md hidden-lg hidden-sm ">
+        <carousel :per-page="1">
+          <template v-for="product in products">
+           <slide :key="product.id">
+              <product-item :product="product" :key="product.id" :displayList="displayList"></product-item>
+           </slide>
+          </template>  
+        </carousel>
+      </div>
+       <div class="container hidden-xs">
         <template v-for="product in products">
           <product-item :product="product" :key="product.id" :displayList="displayList"></product-item>
         </template>
@@ -11,6 +20,7 @@
 </template>
 
 <script>
+  import { Carousel, Slide } from 'vue-carousel';
   import ProductItem from './ProductItem.vue'
   export default {
     name: 'product-list',
@@ -26,7 +36,9 @@
       }
     },
     components: {
-      'product-item': ProductItem
+      'product-item': ProductItem,
+      Carousel, 
+      Slide
     }
   }
 </script>
@@ -41,5 +53,8 @@
     /*#f7f6f5;*/
     padding: 20px 0;
     border-bottom: 1px solid #F0F0F2;
+}
+.hidden-lg{
+  transition: none;
 }
 </style>

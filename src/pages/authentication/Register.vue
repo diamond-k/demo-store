@@ -11,9 +11,7 @@
           v-model="email">     
           <input type="password" name="password" id="password" class="form-control" placeholder="Password"
           v-model="password">
-
-          <button class="button" style="width: 100%;margin-top: 10px; color:#fff;font-size: 14px;" @click.prevent="register"><i class="fa fa-user-plus"></i> Create Account</button>
-         
+          <button class="button" style="width: 100%;margin-top: 10px; color:#fff;font-size: 14px;" @click.prevent="register"><i class="fa fa-user-plus"></i> Create an Account</button>
           <div>
             <div class="center" style="margin-top:10px">
               <p class="inline">Already have an account?</p>

@@ -7,6 +7,7 @@ import VeeValidate from 'vee-validate'
 import store from './store'
 import VModal from 'vue-js-modal'
 
+
 Vue.use(VModal)
 Vue.config.productionTip = false
 Vue.use(VeeValidate)
