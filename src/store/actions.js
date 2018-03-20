@@ -22,9 +22,9 @@ export const orderActions = {
     createOrder({ commit }, payload) {
         commit(ADD_ORDER)
             // Create a new order via API
-        axios.post(`${API_BASE}/orders`, payload).then(res => {
-           commit(ADD_ORDER_SUCCESS,res.data)
-        })
+      //  axios.post(`${API_BASE}/orders`, payload).then(res => {
+        commit(ADD_ORDER_SUCCESS,'success')
+       // })
     }
 }
 
